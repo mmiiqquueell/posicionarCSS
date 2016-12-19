@@ -1,0 +1,54 @@
+ul#menu, aside, main, figure, figcaption{box-sizing:border-box}
+ul#menu, aside, main{border:5px solid black;
+	vertical-align:text-top;padding:15px 5px 5px 5px}
+h1, h2, ul, li, p{margin:0px;}
+ul#menu{
+	background-color:#ffaaaa;
+	width:20%;
+	display:inline-block;
+}
+ul#menu li {list-style-type:none}
+ul#menu li a{text-decoration:none;color:darkblue}
+nav{text-align:center;padding:10px}
+aside{
+	background-color:#aaffaa;
+	width:20%;
+	display:inline-block;
+}
+main{
+	background-color:#aaaaff;
+	width:60%;
+	display:inline-block;
+}
+footer{
+	background-color:#ffffaa;
+}
+figure{
+	width:200px;
+	height:200px;
+	text-align:center;
+	float:left;
+	border:1px solid black;
+	background-color:white;
+	overflow:hidden;
+}
+figure img{
+  height:80%;
+}
+figure figcaption{
+	border-top:2px solid black;
+	background-color:#dddddd;
+	height:20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
