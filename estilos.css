@@ -1,5 +1,5 @@
 ul#menu, aside, main, figure, figcaption{box-sizing:border-box}
-ul#menu, aside, main{border:5px solid black;
+ul#menu, aside, main{
 	vertical-align:text-top;padding:15px 5px 5px 5px}
 h1, h2, ul, li, p{margin:0px;}
 ul#menu{
