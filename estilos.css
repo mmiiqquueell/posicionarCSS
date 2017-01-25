@@ -34,6 +34,9 @@ figure{
 }
 figure img{
   height:80%;
+  display:block;
+  margin:auto;
+  padding:10px;
 }
 figure figcaption{
 	border-top:2px solid black;
