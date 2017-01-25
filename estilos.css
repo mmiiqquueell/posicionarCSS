@@ -1,58 +1,103 @@
-ul#menu, aside, main, figure, figcaption{box-sizing:border-box}
-ul#menu, aside, main{
-	vertical-align:text-top;padding:15px 5px 5px 5px}
-h1, h2, ul, li, p{margin:0px;}
-ul#menu{
-	background-color:#ffaaaa;
-	width:20%;
-	display:inline-block;
-}
-ul#menu li {list-style-type:none}
-ul#menu li a{text-decoration:none;color:darkblue}
-nav{text-align:center;padding:10px}
-aside{
-	background-color:#aaffaa;
-	width:20%;
-	display:inline-block;
-}
-main{
-	background-color:#aaaaff;
-	width:60%;
-	display:inline-block;
-}
-footer, header{
-	background-color:#ffffaa;
-	text-align:center;
-}
-figure{
-	width:200px;
-	height:200px;
-	text-align:center;
-	float:left;
-	border:1px solid black;
-	background-color:white;
-	overflow:hidden;
-}
-figure img{
-  height:80%;
-  display:block;
-  margin:auto;
-  padding:10px;
-}
-figure figcaption{
-	border-top:2px solid black;
-	background-color:#dddddd;
-	height:20%;
+ul#menu, aside, main, figure, figcaption { box-sizing: border-box; }
+ul#menu, aside, main { vertical-align: text-top; padding: 0px 5px 0px 5px; }
+h1, h2, ul, li, p { margin: 0px; }
+ul#menu { background-color: #FFF; width: 20%; display: inline-block; }
+ul#menu li { list-style-type: none; }
+ul#menu li a { text-decoration: none; color: darkblue; }
+nav { text-align: center; padding: 0px; }
+aside { background-color: #AFA; width: 20%; display: inline-block; }
+main { background-color: #AAF; width: 59%; display: inline-block; }
+footer, header { background-color: #FFA; text-align: center; }
+figure { width: 200px; height: 200px; text-align: center; float: left; border: 1px solid black; background-color: white; overflow: hidden; }
+figure img { height: 80%; display: block; margin: auto; padding: 10px; }
+figure figcaption { border-top: 2px solid black; background-color: #DDD; height: 20%; }
+
+
+/* My MENU */
+#menu {border: 1px solid black; background-color: white;}
+
+#dropdown1 {
+	background-color: white;
+	position: relative;
+	display: inline-block;
+	color: #00F;
+	cursor: pointer;
+	border: 1px solid red;
+	padding: 15px;
+	min-width: 91%;
+	text-align: center;
+	
 }
 
+#dropdown-menu1 a, #dropdown-menu2 a, #dropdown-menu3 a, #dropdown-menu4 a, #dropdown-menu5 a {z-index:-6;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(255, 255, 255, 1);
+	border: 1px solid white;
+	padding: 15px;
+	font-weight: bold;
+	text-align: center;
+	color: 2px 2px #FFF;
+	text-shadow: 2px 2px #FFF;	
+	min-width: 91%;
+	color: rgba(255, 255, 255, 0);
+}
+
+#dropdown-menu1 a {z-index:-6;
+	transition-duration: 0.5s; transition-delay: 2.0s;
+	transition-timing-function: linear;
+}
+
+#dropdown-menu2 a {z-index:-6;
+	transition-duration: 1.0s;  transition-delay: 1.5s;
+	transition-timing-function: linear;
+}
+
+#dropdown-menu3 a {z-index:-6;
+	transition-duration: 1.5s;  transition-delay: 1.0s;
+	transition-timing-function: linear;
+}
+
+#dropdown-menu4 a {z-index:-6;
+	transition-duration: 2.0s;  transition-delay: 0.5s;
+	transition-timing-function: linear;
+}
+
+#dropdown-menu5 a {z-index:-6;
+	transition-duration: 2.5s;  transition-delay: 0.0s;
+	transition-timing-function: linear;
+}
 
 
+a {text-decoration: none;}
 
+#dropdown1:hover #dropdown-menu1 a { z-index:-1;
+	transition-duration: 0.5s; transition-timing-function: linear; transition-delay: 0.0s;
+	color: #00F; text-shadow: 2px 2px #3FA; border: 1px solid black;
+	top: 50px;
+}
 
+#dropdown1:hover #dropdown-menu2 a { z-index:-2;
+	transition-duration: 1.0s; transition-timing-function: linear; transition-delay: 0.0s;
+	color: #00F; text-shadow: 2px 2px #3FA; border: 1px solid black;
+	top: 100px;
+}
 
+#dropdown1:hover #dropdown-menu3 a { z-index:-3;
+	transition-duration: 1.5s; transition-timing-function: linear; transition-delay: 0.0s;
+	color: #00F; text-shadow: 2px 2px #3FA; border: 1px solid black;
+	top: 150px;
+}
 
+#dropdown1:hover #dropdown-menu4 a { z-index:-4;
+	transition-duration: 2.0s; transition-timing-function: linear; transition-delay: 0.0s;
+	color: #00F; text-shadow: 2px 2px #3FA; border: 1px solid black;
+	top: 200px; 
+}
 
-
-
-
-
+#dropdown1:hover #dropdown-menu5 a { z-index:-5;
+	transition-duration: 2.5s; transition-timing-function: linear; transition-delay: 0.0s;
+	color: #00F; text-shadow: 2px 2px #3FA; border: 1px solid black;
+	top: 250px;
+}
