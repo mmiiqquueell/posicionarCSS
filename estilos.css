@@ -36,6 +36,43 @@ figure#nueve {position: absolute; left: -1000%; margin: 1px; width: 30%; height:
 figure:hover figure#nueve {left: 36%; }
 
 
+/* SLIDER */
+#slider {width: 100%;}
+#Slid {
+	margin: 0 auto;
+	width: 500px;
+	height: 500px;
+	background-image: url(images/one.png);
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	animation-name: sli;
+	animation-duration: 45s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sli {
+    0%   {background-image: url(images/one.png);}
+    10%   {background-image: url(images/one.png);}
+    11%   {background-image: url(images/two.png);}
+    21%   {background-image: url(images/two.png);}
+    22%   {background-image: url(images/three.png);}
+    32%   {background-image: url(images/three.png);}
+    33%   {background-image: url(images/four.png);}
+    43%   {background-image: url(images/four.png);}
+    44%   {background-image: url(images/five.png);}
+    54%   {background-image: url(images/five.png);}
+    55%   {background-image: url(images/six.png);}
+    65%   {background-image: url(images/six.png);}
+    66%   {background-image: url(images/seven.png);}
+    76%   {background-image: url(images/seven.png);}
+    77%   {background-image: url(images/eight.png);}
+    87%   {background-image: url(images/eight.png);}
+    88%   {background-image: url(images/nine.png);}
+    100%   {background-image: url(images/nine.png);}
+}
+
+
 /* My MENU */
 #menu {border: 1px solid black; background-color: rgba(0, 0, 0, 0);}
 
